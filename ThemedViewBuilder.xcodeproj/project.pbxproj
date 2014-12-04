@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634948AE1A305D9C00990F8C /* AAStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 634948AD1A305D9C00990F8C /* AAStyle.m */; };
+		634948B11A30606700990F8C /* UIKit+AAStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 634948B01A30606700990F8C /* UIKit+AAStyle.m */; };
 		63E421301A268C0C000F3209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E4212F1A268C0C000F3209 /* main.m */; };
 		63E421331A268C0C000F3209 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E421321A268C0C000F3209 /* AppDelegate.m */; };
 		63E421361A268C0C000F3209 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E421351A268C0C000F3209 /* ViewController.m */; };
@@ -32,6 +34,10 @@
 /* Begin PBXFileReference section */
 		2FC7FEEAAB2903D07BADD34B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		479F8DCF597A7E37DC4B5228 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		634948AC1A305D9C00990F8C /* AAStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAStyle.h; sourceTree = "<group>"; };
+		634948AD1A305D9C00990F8C /* AAStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAStyle.m; sourceTree = "<group>"; };
+		634948AF1A30606700990F8C /* UIKit+AAStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AAStyle.h"; sourceTree = "<group>"; };
+		634948B01A30606700990F8C /* UIKit+AAStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+AAStyle.m"; sourceTree = "<group>"; };
 		63E4212A1A268C0C000F3209 /* ThemedViewBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemedViewBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4212E1A268C0C000F3209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E4212F1A268C0C000F3209 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +120,10 @@
 				63E421541A268C35000F3209 /* ThemedViewBuilder.m */,
 				63E421561A268D04000F3209 /* ThemeConfiguration.h */,
 				63E421571A268D04000F3209 /* ThemeConfiguration.m */,
+				634948AC1A305D9C00990F8C /* AAStyle.h */,
+				634948AD1A305D9C00990F8C /* AAStyle.m */,
+				634948AF1A30606700990F8C /* UIKit+AAStyle.h */,
+				634948B01A30606700990F8C /* UIKit+AAStyle.m */,
 			);
 			path = ThemedViewBuilder;
 			sourceTree = "<group>";
@@ -288,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634948B11A30606700990F8C /* UIKit+AAStyle.m in Sources */,
 				63E421361A268C0C000F3209 /* ViewController.m in Sources */,
+				634948AE1A305D9C00990F8C /* AAStyle.m in Sources */,
 				63E421331A268C0C000F3209 /* AppDelegate.m in Sources */,
 				63E421301A268C0C000F3209 /* main.m in Sources */,
 				63E421551A268C35000F3209 /* ThemedViewBuilder.m in Sources */,

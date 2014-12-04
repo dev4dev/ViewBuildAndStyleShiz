@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ThemedViewBuilder.h"
 #import <Masonry/Masonry.h>
+#import "AAStyle.h"
 
 @interface ViewController ()
 
@@ -75,6 +76,11 @@ viewDidAppear:(BOOL)animated
 		make.top.equalTo(body.mas_bottom).offset(10);
 	}];
 	
+	[[AAStyle make:^(AAStyle *style) {
+		style.font = [UIFont fontWithName:@"Georgia" size:36];
+		style.foregroundColor = [UIColor orangeColor];
+	}] applyStyleToView:body2];
+	
 	UIView *box = BuildView(@"Box");
 	[self.view addSubview:box];
 	[box mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,6 +89,12 @@ viewDidAppear:(BOOL)animated
 		make.top.equalTo(body2.mas_bottom).offset(20);
 		make.height.equalTo(@20);
 	}];
+	
+	[[AAStyle make:^(AAStyle *style) {
+		style.borderColor = [UIColor purpleColor];
+		style.borderWidth = 7;
+		style.cornerRadius = 10;
+	}] applyStyleToView:box];
 }
 
 - (void)didReceiveMemoryWarning {
