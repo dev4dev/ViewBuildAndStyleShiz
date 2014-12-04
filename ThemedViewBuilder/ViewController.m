@@ -79,7 +79,7 @@ viewDidAppear:(BOOL)animated
 	[[AAStyle make:^(AAStyle *style) {
 		style.font = [UIFont fontWithName:@"Georgia" size:36];
 		style.foregroundColor = [UIColor orangeColor];
-	}] applyStyleToView:body2];
+	}] applyToView:body2];
 	
 	UIView *box = BuildView(@"Box");
 	[self.view addSubview:box];
@@ -94,7 +94,7 @@ viewDidAppear:(BOOL)animated
 		style.borderColor = [UIColor purpleColor];
 		style.borderWidth = 7;
 		style.cornerRadius = 10;
-	}] applyStyleToView:box];
+	}] applyToView:box];
 }
 
 - (void)didReceiveMemoryWarning {

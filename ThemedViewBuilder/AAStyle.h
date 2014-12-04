@@ -45,6 +45,7 @@ typedef void (^StyleBuilderBlock)(AAStyle *style);
 @property (nonatomic, strong) UIColor *borderColor;
 @property (nonatomic, assign) CGFloat borderWidth;
 @property (nonatomic, assign) CGFloat cornerRadius;
+@property (nonatomic, assign) BOOL masksToBounds;
 
 /**
  *  Builder
@@ -55,6 +56,6 @@ typedef void (^StyleBuilderBlock)(AAStyle *style);
  */
 + (instancetype)make:(StyleBuilderBlock)block;
 
-- (void)applyStyleToView:(UIView *)view;
+- (void)applyToView:(UIView *)view;
 
 @end

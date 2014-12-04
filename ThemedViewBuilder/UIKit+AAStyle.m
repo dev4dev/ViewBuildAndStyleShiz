@@ -12,17 +12,18 @@
 @implementation UIView (AAStyle)
 
 - (void)
-aa_applyStyle:(AAStyle *)theme
+aa_applyStyle:(AAStyle *)style
 {
-	self.backgroundColor = theme.backgroundColor;
-	self.tintColor = theme.tintColor;
+	self.backgroundColor = style.backgroundColor;
+	self.tintColor = style.tintColor;
 	
-	self.hidden = theme.hidden;
-	self.alpha = theme.alpha;
+	self.hidden = style.hidden;
+	self.alpha = style.alpha;
 	
-	self.layer.borderColor = theme.borderColor.CGColor;
-	self.layer.borderWidth = theme.borderWidth;
-	self.layer.cornerRadius = theme.cornerRadius;
+	self.layer.borderColor = style.borderColor.CGColor;
+	self.layer.borderWidth = style.borderWidth;
+	self.layer.cornerRadius = style.cornerRadius;
+	self.layer.masksToBounds = style.masksToBounds;
 }
 
 @end
@@ -30,16 +31,16 @@ aa_applyStyle:(AAStyle *)theme
 @implementation UILabel (AAStyle)
 
 - (void)
-aa_applyStyle:(AAStyle *)theme
+aa_applyStyle:(AAStyle *)style
 {
-	[super aa_applyStyle:theme];
+	[super aa_applyStyle:style];
 	
-	self.textColor = theme.foregroundColor;
-	self.shadowColor = theme.textShadowColor;
-	self.shadowOffset = theme.textShadowOffset;
+	self.textColor = style.foregroundColor;
+	self.shadowColor = style.textShadowColor;
+	self.shadowOffset = style.textShadowOffset;
 	
-	self.font = theme.font;
-	self.textAlignment = theme.textAlignment;
+	self.font = style.font;
+	self.textAlignment = style.textAlignment;
 }
 
 @end
@@ -47,16 +48,16 @@ aa_applyStyle:(AAStyle *)theme
 @implementation UIButton (AAStyle)
 
 - (void)
-aa_applyStyle:(AAStyle *)theme
+aa_applyStyle:(AAStyle *)style
 {
-	[super aa_applyStyle:theme];
+	[super aa_applyStyle:style];
 	
-	[self setTitleColor:theme.foregroundColor forState:UIControlStateNormal];
-	[self setTitleShadowColor:theme.textShadowColor forState:UIControlStateNormal];
+	[self setTitleColor:style.foregroundColor forState:UIControlStateNormal];
+	[self setTitleShadowColor:style.textShadowColor forState:UIControlStateNormal];
 	
-	self.titleLabel.shadowOffset = theme.textShadowOffset;
-	self.titleLabel.font = theme.font;
-	self.titleLabel.textAlignment = theme.textAlignment;
+	self.titleLabel.shadowOffset = style.textShadowOffset;
+	self.titleLabel.font = style.font;
+	self.titleLabel.textAlignment = style.textAlignment;
 }
 
 @end
@@ -64,13 +65,13 @@ aa_applyStyle:(AAStyle *)theme
 @implementation UITextField (AAStyle)
 
 - (void)
-aa_applyStyle:(AAStyle *)theme
+aa_applyStyle:(AAStyle *)style
 {
-	[super aa_applyStyle:theme];
+	[super aa_applyStyle:style];
 	
-	self.font = theme.font;
-	self.textAlignment = theme.textAlignment;
-	self.textColor = theme.foregroundColor;
+	self.font = style.font;
+	self.textAlignment = style.textAlignment;
+	self.textColor = style.foregroundColor;
 }
 
 @end

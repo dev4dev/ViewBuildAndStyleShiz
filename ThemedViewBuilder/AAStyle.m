@@ -36,13 +36,14 @@ init
 		_alpha = 1.0;
 		_hidden = NO;
 		
+		_masksToBounds = NO;
 	}
 	
 	return self;
 }
 
 - (void)
-applyStyleToView:(UIView *)view
+applyToView:(UIView *)view
 {
 	[view aa_applyStyle:self];
 }

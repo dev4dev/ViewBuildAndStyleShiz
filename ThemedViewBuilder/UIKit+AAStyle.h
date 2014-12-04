@@ -11,7 +11,7 @@
 
 @interface UIView (AAStyle)
 
-- (void)aa_applyStyle:(AAStyle *)theme;
+- (void)aa_applyStyle:(AAStyle *)style;
 
 @end
 
