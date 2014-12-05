@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ThemedViewBuilder.h"
 #import <Masonry/Masonry.h>
+
+#import "AAStyledViewBuilder.h"
 #import "AAStyle.h"
 
 @interface ViewController ()
@@ -36,6 +38,11 @@
 	}];
 	
 	[[ThemedViewBuilder sharedBuilder] addViewConstructor:@"Body" forViewClass:[UILabel class] withTheme:theme];
+	[[AAStyledViewBuilder sharedBuilder] addNamed:@"Box" viewClass:[UIView class] withStyle:[AAStyle make:^(AAStyle *style) {
+		style.backgroundColor = [UIColor yellowColor];
+		style.borderColor = [UIColor blueColor];
+		style.borderWidth = 2.0;
+	}]];
 	
 	[[ThemedViewBuilder sharedBuilder] addViewConstructor:@"Box" forViewClass:[UIView class] withThemeBlock:^(ThemeConfiguration *theme) {
 		theme.borderColor = [UIColor orangeColor];
@@ -88,6 +95,13 @@ viewDidAppear:(BOOL)animated
 		make.right.equalTo(@-10);
 		make.top.equalTo(body2.mas_bottom).offset(20);
 		make.height.equalTo(@20);
+	}];
+
+	UIView *box2 = AABuildView(@"Box");
+	[box addSubview:box2];
+	[box2 mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.left.top.equalTo(@5);
+		make.size.sizeOffset(CGSizeMake(100.0, 10.0));
 	}];
 	
 	[[AAStyle make:^(AAStyle *style) {

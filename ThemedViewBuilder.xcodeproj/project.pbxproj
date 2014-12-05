@@ -18,6 +18,7 @@
 		63E4214A1A268C0D000F3209 /* ThemedViewBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E421491A268C0D000F3209 /* ThemedViewBuilderTests.m */; };
 		63E421551A268C35000F3209 /* ThemedViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E421541A268C35000F3209 /* ThemedViewBuilder.m */; };
 		63E421581A268D04000F3209 /* ThemeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E421571A268D04000F3209 /* ThemeConfiguration.m */; };
+		63F73D2F1A31B6220005B512 /* AAStyledViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F73D2E1A31B6220005B512 /* AAStyledViewBuilder.m */; };
 		E01A0DA36FFF454B6B23BBA0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8172038F52E9BD42D11D30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		63E421541A268C35000F3209 /* ThemedViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemedViewBuilder.m; sourceTree = "<group>"; };
 		63E421561A268D04000F3209 /* ThemeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeConfiguration.h; sourceTree = "<group>"; };
 		63E421571A268D04000F3209 /* ThemeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeConfiguration.m; sourceTree = "<group>"; };
+		63F73D2D1A31B6220005B512 /* AAStyledViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAStyledViewBuilder.h; sourceTree = "<group>"; };
+		63F73D2E1A31B6220005B512 /* AAStyledViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAStyledViewBuilder.m; sourceTree = "<group>"; };
 		8D8172038F52E9BD42D11D30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +127,8 @@
 				634948AD1A305D9C00990F8C /* AAStyle.m */,
 				634948AF1A30606700990F8C /* UIKit+AAStyle.h */,
 				634948B01A30606700990F8C /* UIKit+AAStyle.m */,
+				63F73D2D1A31B6220005B512 /* AAStyledViewBuilder.h */,
+				63F73D2E1A31B6220005B512 /* AAStyledViewBuilder.m */,
 			);
 			path = ThemedViewBuilder;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634948B11A30606700990F8C /* UIKit+AAStyle.m in Sources */,
+				63F73D2F1A31B6220005B512 /* AAStyledViewBuilder.m in Sources */,
 				63E421361A268C0C000F3209 /* ViewController.m in Sources */,
 				634948AE1A305D9C00990F8C /* AAStyle.m in Sources */,
 				63E421331A268C0C000F3209 /* AppDelegate.m in Sources */,
