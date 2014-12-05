@@ -38,11 +38,6 @@
 	}];
 	
 	[[ThemedViewBuilder sharedBuilder] addViewConstructor:@"Body" forViewClass:[UILabel class] withTheme:theme];
-	[[AAStyledViewBuilder sharedBuilder] addNamed:@"Box" viewClass:[UIView class] withStyle:[AAStyle make:^(AAStyle *style) {
-		style.backgroundColor = [UIColor yellowColor];
-		style.borderColor = [UIColor blueColor];
-		style.borderWidth = 2.0;
-	}]];
 	
 	[[ThemedViewBuilder sharedBuilder] addViewConstructor:@"Box" forViewClass:[UIView class] withThemeBlock:^(ThemeConfiguration *theme) {
 		theme.borderColor = [UIColor orangeColor];
@@ -51,6 +46,12 @@
 		theme.backgroundColor = [UIColor lightGrayColor];
 		theme.cornerRadius = 5.0;
 	}];
+	
+	[[AAStyledViewBuilder sharedBuilder] addNamed:@"Box" viewClass:[UIView class] withStyle:[AAStyle make:^(AAStyle *style) {
+		style.backgroundColor = [UIColor yellowColor];
+		style.borderColor = [UIColor blueColor];
+		style.borderWidth = 2.0;
+	}]];
 }
 
 - (void)
